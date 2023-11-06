@@ -76,5 +76,48 @@ public class AStarSearchAlgo implements IInformedSearchAlgo {
 		}
 		return null;
 	}
+	
+public boolean isAdmissibleH(Node root, String goal) {
+		
+		PriorityQueue<Node>  frontier = new PriorityQueue<>(new NodeComparatorByHn());
+		frontier.add(root);
+		while(!frontier.isEmpty()) {
+			Node current = frontier.poll();
+			Node curstart=execute(root, current.getLabel(), "G");
+			if(current.getH()<curstart.getG()) return false;
+			else {
+		List<Edge> listChild = current.getChildren();
+		for (Edge edge : listChild) {
+			Node endNode = edge.getEnd();
+			if(!frontier.contains(endNode)) {
+				 frontier.add(endNode);
+			}
+		}
+			}
+		}
+		return true; 
+	}
+//public boolean isAdmissibleH(Node root, String goal) {
+//	
+//	PriorityQueue<Node>  frontier = new PriorityQueue<>(new NodeComparatorByHn());
+//	frontier.add(root);
+//	while(!frontier.isEmpty()) {
+//		Node current = frontier.poll();
+//		if(current.getLabel().equals(goal)) return true;
+//		else {
+//			List<Edge> listChild = current.getChildren();
+//			int i=0;
+//			for (Edge edge : listChild) {
+//				
+//				Node endNode = edge.getEnd();
+//				if(current.getH()> endNode.getH()&& !frontier.contains(endNode)) {
+//					frontier.add(endNode);
+//				}
+//			}
+//		}
+//	}
+//	return false; 
+//}
+	
 
 }

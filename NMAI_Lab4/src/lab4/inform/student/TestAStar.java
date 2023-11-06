@@ -26,15 +26,19 @@ public class TestAStar {
 //		Node res = aStar.execute(s, g.getLabel());
 //		System.out.println(NodeUtils.printPath(res));
 //		System.out.println(res.getG());
+		IInformedSearchAlgo aStar = new AStarSearchAlgo();
+		Node res = aStar.execute(s,b.getLabel(), g.getLabel());
+		System.out.println(NodeUtils.printPath(res));
+		System.out.println(res.getG());
 //		IInformedSearchAlgo gree = new GreedyBestFirstSearchAlgo();
 //		Node res = gree.execute(s, g.getLabel());
 //		System.out.println(NodeUtils.printPath(res));
 //		System.out.println(res.getG());
 //		IInformedSearchAlgo gree = new GreedyBestFirstSearchAlgo();
-//		Node res = gree.execute(s,a.getLabel(), g.getLabel());
+//		Node res = gree.execute(s,b.getLabel(), g.getLabel());
 //		System.out.println(NodeUtils.printPath(res));
 //		System.out.println(res.getG());
-		 Heuristic h = new Heuristic();
-		 System.out.println(h.isAdmissibleH(s, g.getLabel()));
+//		 Heuristic h = new Heuristic();
+//		 System.out.println(h.isAdmissibleH(s, g.getLabel()));
 	}
 }

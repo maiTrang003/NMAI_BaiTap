@@ -21,10 +21,17 @@
     <fullyQualifiedTypeName name="lab4.inform.student.Node"/>
     <fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
     <fullyQualifiedTypeName name="lab4.inform.student.NodeComparatorByHnPlussGn"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="lab4.inform.student.Edge"/>
-    <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
     <fullyQualifiedTypeName name="lab4.inform.student.NodeComparatorByHn"/>
     <fullyQualifiedTypeName name="lab4.inform.student.Heuristic"/>
+    <fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
+    <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Currency"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="puzzle_8.student.Node"/>
+    <fullyQualifiedTypeName name="puzzle_8.student.GreedySearch"/>
+    <fullyQualifiedTypeName name="puzzle_8.student.IPuzzleAlgo"/>
+    <fullyQualifiedTypeName name="puzzle_8.student.PuzzleUtils"/>
+    <fullyQualifiedTypeName name="puzzle_8.student.AStartSearch"/>
 </qualifiedTypeNameHistroy>
